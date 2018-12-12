@@ -1,7 +1,17 @@
-from sense_emu import SenseHat
+#!/usr/bin/python
+# coding: utf-8
+
+try:
+    from sense_hat import SenseHat
+    sense = SenseHat()
+except:
+    from sense_emu import SenseHat
+    sense = SenseHat()
+
+
 import time
 
-sense = SenseHat()
+#sense = SenseHat()
 sense.clear()
 
 depx = 1
